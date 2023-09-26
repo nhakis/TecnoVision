@@ -1,64 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color:darkgray;
-        }
-        header {
-            text-align: left;
-            padding: 1px;
-        }
-        nav {
-            color: black;
-            padding: 1px;
-            margin: 0px
-        }
-        nav a {
-            background-color: beige;
-            color: purple;
-            text-decoration: none;
-            margin: 0px;
-        }
-        nav b {
-            background-color: beige;
-            color: purple;
-            text-decoration: none;
-            margin: 0px;
-        }
-       
-        
-        main {
-            padding: 1px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <a href="index.html"><img src="1N.png" width=15%></a>
-    </header>
-    <nav>
-        <a href="index.html"><img src="home1.ico" width=2%></a>
-    <nav>
-    <main>
-        <h1>Contactanos</h1>
-        <p><a href="https://instagram.com/iguillardoy?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="ig.ico" width=3%></a></p>
-        <p><a href="https://contacts.google.com/u/2/person/106189997929905671398?pli=1"><img src="gmail.ico" width=3%></a></p>
-        <p><img src="Warap.ico" width=3%>+54 9 2284722900</p>
-        <p>conoce mas sobre nosotros < href="info.html">acá</b><p>
-    </main>
-    <footer>
-        <p>
-            <div id="t1">
-                <h1></h1>
-                <p id="t2"> <a href="p1.html" id="t4"><b>Ver más.</b></a></p>
-            </div>
+    <title>Contactanos-TecnoVisión Innovations</title>
+    <link rel="shortcut icon" href="./recursos/1s.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>  
+<style>
+.img {
+    display: absolute;
+    align-items:left;
+    height: auto;
+    width: 100px; 
+    left:0;
+    margin-top: 1.3%;
+    }
+.img:hover {
+    transform: scale(1.1); 
+    cursor: pointer;}
+#img{position: fixed;}
+#body{top: 100px;
+}body{ text-align: center;
+position: relative;}
 
-    
+@media screen and (max-width: 768px) /*celus*/{
+    h1{top: 30px;
+    font-size: 15px;}
+}
+
+@media screen and (max-width: 444px) /*celus2*/{
+    h1{top:50px;}}
+
+
+#redes{text-align: center;
+            background-color:none;
+            box-shadow: none;
+            width:100%;
+        }
+section{ position: relative;
+        display:inline-table;
+            margin: 20px;
+            margin-top: 0px;
+            background-color: none;
+            border-radius: 5px;
+            box-shadow: none;
+            top: 120px;
+            
+            }
+#sp{margin-right: 20px;
+    align-items: center;}
+#mensaje-copiado1 {
+    position: absolute;
+    top: 30%; 
+    left: 63%;
+    background-color:#02020262;
+    border-radius: 10px;
+    color: #e0dfdf;
+    padding: 10px;
+    z-index: 1;
+    }
+#mensaje-copiado2 {
+    position: absolute;
+    top: 30%; 
+    left: 55%;
+    background-color:#02020262;
+    border-radius: 10px;
+    color: #e0dfdf;
+    padding: 10px;
+    z-index: 1;
+    }
+.botonc1{border: none;
+background:none;
+cursor: pointer;}
+.botonc2{border: none;
+background:none;
+cursor: pointer;}
+.oculto {
+    display: none;
+}
+.btn{top:50px;}
+h1{ position: relative;
+    color:#BEBEBE;
+    margin-left: 15px;
+    top:0px;
+    font-size: 30px;
+    text-align: left;}
+
+</style>
+<header>
+    <div class="zoc">
+        <a href="about.html"><img src="./recursos/1B.png" class="img2" id="img"></a>
+        <nav class="menu" >
+            
+            <nav id="backmenu"></nav>
+            <ul>
+                <li><a class="menutext" href="index.html">Inicio</a></li>
+                <li><a class="menutext" href="productos.html">Productos</a></li>
+                <li><a class="menutext" href="servicios.html">Servicios</a></li>
+                <li><a class="menutext" href="about.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body id="body">
+    <video autoplay loop muted id="background">
+        <source src="https://player.vimeo.com/external/649684552.sd.mp4?s=0ea3a18bd15550f1d271494adda901bf8d1e1a80&profile_id=164&oauth_token_id=57447761">
+    </video>
+
+
+ <section id="redes">
+    <a id="sp"  href="https://instagram.com/iguillardoy?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="./recursos/ig.ico" alt="instagram" class="img"></a>
+    <a id="sp" href="https://github.com/nhakis"><img src="./recursos/github.ico" alt="github" class="img"></a>     
+    <button id="sp" class="botonc1" data-contenido="+54 9 2284722900">
+            <a><img src="./recursos/Warap.ico" alt="whatsapp"  class="img"></a>
+            <div id="mensaje-copiado1" class="oculto">Copiado!</div>
+    </button>
+    <button id="sp" class="botonc2"  data-contenido="iguillardoy13@gmail.com">
+            <a></a><img src="./recursos/gmail.ico" alt="gmail"  class="img">
+            <div id="mensaje-copiado2" class="oculto">Copiado!</div>
+    </button> 
+    <a id="sp" href="https://www.linkedin.com/in/iñaki-guillardoy-6a4399237"><img src="./recursos/linkedin.ico" alt="linkedin" class="img"></a>    
+    <a id="sp" href="https://reddit.com/u/nhakis/s/ObphOWphqz"><img src="./recursos/reddit.ico" alt="reddit" class="img"></a>     
+    <a  id="sp"  href="https://youtube.com"><img src="./recursos/yt.ico" alt="youtube" class="img"></a>
+    <a id="sp"  href="https://twitter.com"><img src="./recursos/twit.ico" alt="twitter" class="img"></a>
+    <a id="sp" href="https://www.facebook.com/"><img src="./recursos/faceb.ico" alt="facebook" class="img"></a>     
+ 
+ </section>
+
+</body>
+
+</html>
+<script>
+  // Selecciona todos los botones con la clase "boton-copiar"
+const botonCopiar1 = document.querySelectorAll('.botonc1');
+const botonCopiar2 = document.querySelectorAll('.botonc2');
+const mensajeCopiado1 = document.getElementById('mensaje-copiado1');
+const mensajeCopiado2 = document.getElementById('mensaje-copiado2');
+
+
+// Agrega un evento de clic a cada botón
+botonCopiar1.forEach(boton => {
+    boton.addEventListener('click', () => {
+        // Obtiene el contenido asociado al botón
+        const contenido = boton.getAttribute('data-contenido');
+        
+        // Crea un elemento de texto temporal para copiar al portapapeles
+        const elementoTemporal = document.createElement('textarea');
+        elementoTemporal.value = contenido;
+
+        // Agrega el elemento temporal al DOM
+        document.body.appendChild(elementoTemporal);
+
+        // Selecciona y copia el texto al portapapeles
+        elementoTemporal.select();
+        document.execCommand('copy');
+
+        // Elimina el elemento temporal
+        document.body.removeChild(elementoTemporal);
+
+        // Muestra el mensaje de aviso
+        mensajeCopiado1.style.display = 'block';
+
+        // Oculta el mensaje después de un tiempo (puedes ajustar el tiempo)
+        setTimeout(() => {
+            mensajeCopiado1.style.display = 'none';
+        }, 2000); // 2000 milisegundos = 2 segundos
+    });
+});
+botonCopiar2.forEach(boton => {
+    boton.addEventListener('click', () => {
+        // Obtiene el contenido asociado al botón
+        const contenido = boton.getAttribute('data-contenido');
+        
+        // Crea un elemento de texto temporal para copiar al portapapeles
+        const elementoTemporal = document.createElement('textarea');
+        elementoTemporal.value = contenido;
+
+        // Agrega el elemento temporal al DOM
+        document.body.appendChild(elementoTemporal);
+
+        // Selecciona y copia el texto al portapapeles
+        elementoTemporal.select();
+        document.execCommand('copy');
+
+        // Elimina el elemento temporal
+        document.body.removeChild(elementoTemporal);
+
+        // Muestra el mensaje de aviso
+        mensajeCopiado2.style.display = 'block';
+
+        // Oculta el mensaje después de un tiempo (puedes ajustar el tiempo)
+        setTimeout(() => {
+            mensajeCopiado2.style.display = 'none';
+        }, 2000); // 2000 milisegundos = 2 segundos
+    });
+});
+
+</script>
