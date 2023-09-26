@@ -23,9 +23,9 @@
                 flex-wrap: wrap;
                 gap: 20px;
             }
-            #background{
-                position: fixed;
-                top: 0;
+#background{
+    position: fixed;
+    top: 0;
     left: 0;
     min-width: 100%;
     min-height: 100%;
@@ -54,9 +54,7 @@
     padding: 0px;
     cursor: pointer;
     color: white;
-    size:0px;
-    
-}
+    size:0px;}
 /*menu y header*/
 #btn{display: none;}
 
